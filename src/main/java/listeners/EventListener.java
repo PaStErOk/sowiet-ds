@@ -18,10 +18,7 @@ public class EventListener extends ListenerAdapter {
         if (event.getGuildChannel().getId().equals("1226845594706907278")) return;
         Message message = event.getMessage();
         String content = message.getContentRaw();
-        if (content.equals("ping")){
-            MessageChannel channel = event.getChannel();
-            channel.sendMessage("Pong!").queue();
-        }
+        //Добавить сюда логирование onMessageRecieved (И так же разделить как и команды)
     }
 }
 
